@@ -1,10 +1,3 @@
-# docker-jypyter
-
-자세한 설치 방법은 블로그 참고 [~Link~](https://ju-ing.github.io/posts/The-Littlest-JupyterHub/)
-
-
-## Dockerfile
-```docker
 # Systemd inside a Docker container, for CI only
 # FROM ubuntu:18.04
 From nvidia/cuda:11.0-devel-ubuntu18.04
@@ -48,4 +41,3 @@ STOPSIGNAL SIGRTMIN+3
 # ENV PATH=/opt/tljh/hub/bin:${PATH}
 
 CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
-```
