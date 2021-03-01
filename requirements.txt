@@ -1,0 +1,6 @@
+pandas
+numpy
+gpustat
+seaborn
+sklearn
+tensorflow-gpu==2.4.1
