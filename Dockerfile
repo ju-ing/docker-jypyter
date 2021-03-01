@@ -40,4 +40,7 @@ STOPSIGNAL SIGRTMIN+3
 # ENV TLJH_BOOTSTRAP_PIP_SPEC=/srv/src
 # ENV PATH=/opt/tljh/hub/bin:${PATH}
 
+#  --mount type=bind,source=$(pwd),target=/srv/src
+COPY / /srv/src
+
 CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
