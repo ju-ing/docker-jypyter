@@ -1,6 +1,6 @@
 # Systemd inside a Docker container, for CI only
 # FROM ubuntu:18.04
-From nvidia/cuda:11.0-devel-ubuntu18.04
+FROM nvidia/cuda:11.0.3-devel-ubuntu18.04
 
 RUN apt-get update --yes
 
